@@ -1,11 +1,9 @@
 import React from 'react'
-import Header from '../components/header'
-import Hero from '../components/hero'
+import Hero from '../components/Hero'
 
 export default function Landing() {
     return (
         <div>
-           <Header />
            <Hero />
         </div>
     )
