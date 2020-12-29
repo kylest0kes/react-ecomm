@@ -44,7 +44,9 @@ export default function RegisterForm() {
 
                 <hr />
 
-                <p className="login-question">Already have an account?  <Link to="/login">Log In</Link></p>
+                <p className="login-question">Already have an account?  <Link to="/signin">Sign-In</Link></p>
+                <p style={{textAlign: 'center', lineHeight: '5px'}}>OR</p>
+                <button type="button" class="button social google-plus"><i class="fab fa-google" aria-hidden="true"></i>  Sign-Up with Google</button>
             </form>
         </div>    
     )

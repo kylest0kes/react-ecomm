@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import LogIn from './pages/LogIn';
+import SignIn from './pages/SignIn';
 import Register from './pages/Register';
 import ViewAll from './pages/ViewAll';
 
@@ -21,8 +21,8 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
-          <Route path="/login">
-            <LogIn />
+          <Route path="/signin">
+            <SignIn />
           </Route>
         </Switch>
       </div>

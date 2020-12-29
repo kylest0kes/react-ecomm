@@ -19,7 +19,7 @@ export default function Header() {
                     <div className="top-bar-right">
                         <ul className="menu">
                             <li><Link to="/register" className="button menu-btn"><button type="button" className="menu-btn-text">Register</button></Link></li>
-                            <li><Link to="/login" className="button menu-btn"><button type="button" className="menu-btn-text">Log In</button></Link></li>
+                            <li><Link to="/signin" className="button menu-btn"><button type="button" className="menu-btn-text">Sign-In</button></Link></li>
                         </ul>
                     </div>
                 </div>

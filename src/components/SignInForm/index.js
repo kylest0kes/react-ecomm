@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './style.css'
 
-export default function LogInForm() {
+export default function SignInForm() {
     return (
         <div>
             <Link to="/viewall"><p className="form-logo"><i class="fas fa-store"></i></p></Link>
@@ -32,6 +32,8 @@ export default function LogInForm() {
                 <hr />
 
                 <p className="login-question">New to FMOnline?  <Link to="/register">Create an account</Link></p>
+                <p style={{textAlign: 'center', lineHeight: '5px'}}>OR</p>
+                <button type="button" class="button social google-plus"><i class="fab fa-google" aria-hidden="true"></i>  Sign-In with Google</button>
 
             </form>
         </div>
