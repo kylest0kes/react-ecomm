@@ -1,31 +1,26 @@
-.topbar-center-logo {
-  background: #999c9e;
+.sticky-topbar {
+  width: 100%;
 }
 
-.topbar-center-logo .menu {
-  background: #2c3840;
+.menu-btn-txt {
+  color: white;
 }
 
-.topbar-center-logo .menu a {
-  color: #fefefe;
+.menu-btn {
+  margin-right: 15px;
+  background-color: green;
+  border-radius: 16px;
 }
 
-.topbar-center-logo .top-bar-center {
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+.menu-btn:hover {
+  background-color: rgb(77, 185, 77);
 }
 
-@media screen and (max-width: 39.9375em) {
-  .topbar-center-logo .top-bar-center {
-    display: none;
-  }
+.menu-links {
+  color: black;
 }
 
-.topbar-center-logo-mobile {
-  background: #2c3840;
-}
-
-.topbar-center-logo-mobile .menu-icon {
-  vertical-align: text-top;
+.menu-links:hover {
+  color: black;
+  border: black 1px solid;
 }
