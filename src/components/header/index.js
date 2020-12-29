@@ -17,8 +17,8 @@ export default function Header(props) {
                     </div>
                     <div className="top-bar-right">
                         <ul className="menu">
-                            <li><Link to="/register" className="button menu-btn"><button type="button" className="menu-btn-txt">Register</button></Link></li>
-                            <li><Link to="/login" className="button menu-btn"><button type="button" className="menu-btn-txt">Log In</button></Link></li>
+                            <li><Link to="/register" className="button menu-btn"><button type="button" className="menu-btn-text">Register</button></Link></li>
+                            <li><Link to="/login" className="button menu-btn"><button type="button" className="menu-btn-text">Log In</button></Link></li>
                         </ul>
                     </div>
                 </div>
