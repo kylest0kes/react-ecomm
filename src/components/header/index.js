@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 import './style.css';
 
-export default function Header(props) {
+export default function Header() {
     return (
         <div className="top-bar-container" data-sticky-container>
             <div className="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">

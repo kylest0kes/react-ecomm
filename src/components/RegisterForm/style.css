@@ -1,6 +1,20 @@
+.form-logo {
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 55px;
+}
+
+form {
+  border: black 2px solid;
+  width: 20%;
+  padding: 15px;
+  display: block;
+  margin: 15px auto
+}
+
 form .form-icons {
   text-align: center;
-  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -28,10 +42,15 @@ form .submit-btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    margin-top: 30px;
+    width: 100%;
     background-color: #79848b;
 }
 
 form .submit-btn:hover {
     background-color: rgb(108, 158, 108);
+}
+
+.login-question {
+  font-size: small;
 }
