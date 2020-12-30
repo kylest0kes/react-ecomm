@@ -1,5 +1,6 @@
 import React from 'react';
 import ShoppingItem from '../ShoppingItem';
+import StoreItem from '../StoreItem';
 
 
 import './style.css';
@@ -14,21 +15,19 @@ export default function ViewAllContainer() {
                 <h1>fuck</h1>
             </div>
             <div className="cell small-6 medium-5 large-7 grid-mid">
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
+                <StoreItem />
             </div>
             <div className="cell small-4 medium-4 large-3 shopping-cart">
                 <h4 style={{backgroundColor: "rgb(88, 126, 182)", textAlign: "center", color: "white"}}>Shopping Cart</h4>
