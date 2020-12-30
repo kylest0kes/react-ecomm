@@ -40,7 +40,7 @@ export default function RegisterForm() {
                     </div>
                 </div>
 
-                <button className="button submit-btn">Create your FMOnline Account</button>
+                <button className="button submit-btn">Create your MDI Account</button>
 
                 <hr />
 

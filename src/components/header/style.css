@@ -2,8 +2,8 @@
   width: 100%;
 }
 
-.header {
-  background-color: grey;
+.links {
+  float: right;
 }
 
 .menu-btn-text {
@@ -11,8 +11,9 @@
 }
 
 .menu-btn {
-  margin-right: 15px;
-  background-color: green;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: rgb(51, 91, 151);
   border-radius: 16px;
 }
 
@@ -30,12 +31,21 @@
 }
 
 .header-logo {
-  padding: 5px;
+  padding: 10px;
 }
 
-.header-text {
-  margin-left: 15px;
-  color: rgb(122, 10, 10);
-  bottom: 0;
+.top {
+  
+}
+
+.bar-left { 
+  width: 75%;
+  display: inline;
+}
+
+.bar-right {
+  display: inline;
+  height: 100%;
+  width: 25%;
 }
 

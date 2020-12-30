@@ -31,7 +31,7 @@ export default function SignInForm() {
 
                 <hr />
 
-                <p className="login-question">New to FMOnline?  <Link to="/register">Create an account</Link></p>
+                <p className="login-question">New to MDI?  <Link to="/register">Create an account</Link></p>
                 <p style={{textAlign: 'center', lineHeight: '5px'}}>OR</p>
                 <button type="button" class="button social google-plus"><i class="fab fa-google" aria-hidden="true"></i>  Sign-In with Google</button>
 

@@ -1,5 +1,5 @@
 .form-logo {
-  color: black;
+  color: rgb(51, 91, 151);
   text-align: center;
   margin-top: 15px;
   font-size: 55px;
@@ -25,12 +25,12 @@ form .form-icons h4 {
 }
 
 form .form-icons .input-group-label {
-  background-color: #79848b;
-  border-color: #79848b;
+  background-color: rgb(51, 91, 151);
+  border-color: rgb(51, 91, 151);
 }
 
 form .form-icons .input-group-field {
-  border-color: #79848b;
+  border-color: rgb(51, 91, 151);
 }
 
 form .form-icons .fa {
@@ -44,7 +44,7 @@ form .submit-btn {
     margin-right: auto;
     margin-top: 30px;
     width: 100%;
-    background-color: #79848b;
+    background-color: rgb(51, 91, 151);
 }
 
 form .submit-btn:hover {
