@@ -1,15 +1,18 @@
 .grid-left {
-    background-color: green;
+    background-color: rgb(233, 233, 233);
 }
 
 .grid-mid {
-    background-color: blue;
+    background-color: rgb(201, 201, 201);
+
 }
 
-.grid-right {
-    background-color: hotpink;
+.shopping-cart {
+    background-color: rgb(182, 180, 180);
+   height: 75vh;
 }
 
-.all-container {
-
+.shopping-item-container {
+    overflow: auto;
+    height: 45vh;
 }

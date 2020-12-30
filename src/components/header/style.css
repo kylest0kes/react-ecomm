@@ -3,8 +3,10 @@
 }
 
 .header {
-  background-color: rgb(170, 170, 170);
+  background-image: linear-gradient(rgb(129, 129, 129), rgb(224, 223, 223));
 }
+
+
 
 .links {
   float: right;
@@ -36,10 +38,6 @@
 
 .header-logo {
   padding: 10px;
-}
-
-.top {
-  
 }
 
 .bar-left { 

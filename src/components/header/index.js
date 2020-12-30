@@ -16,7 +16,7 @@ export default function Header() {
                         </ul>
                     </div>
                     <div className="cell small-4 medium-4 large-8 welcome">
-                        <h4>Welcome User or blank!</h4>
+                        <h4 className="welcome">Welcome User or blank!</h4>
                     </div>
                     <div className="cell small-4 medium-4 large-2">
                         <ul className="menu links">

@@ -9,7 +9,7 @@ export default function SBCounter() {
 
             </div>
             <div className="cell small-4 medium-4 large-3">
-            <a class="button button-rounded-hover">You have 666 SchruteBucks</a>
+            <a class="button button-rounded-hover">You have 0 SchruteBucks</a>
             </div>
         </div>
     )
