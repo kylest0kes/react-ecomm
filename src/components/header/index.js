@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../images/logo.jpg';
 
 
 import './style.css';
 
 export default function Header() {
     return (
-        <div className="top-bar-container" data-sticky-container>
+        <header>
+        <div className="top-bar-container header" data-sticky-container>
             <div className="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
                 <div className="top-bar">
                     <div className="top-bar-left">
                         <ul className="dropdown menu" data-dropdown-menu>
-                            <li className="menu-text">FMOnline</li>
-                            {/* <li><Link className="menu-links" to="/viewall">View All</Link></li>
-                            <li><Link className="menu-links" to="#">View Recently Added</Link></li> */}
+                            <li className="header-logo"><img src={logo} alt="logo"/></li>
                         </ul>
                     </div>
                     <div className="top-bar-right">
@@ -25,5 +25,6 @@ export default function Header() {
                 </div>
             </div>
         </div>
+        </header>
     )
 }

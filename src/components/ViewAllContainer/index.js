@@ -18,6 +18,7 @@ export default function ViewAllContainer() {
                 <h1>fuck</h1>
                 <h1>fuck</h1>
                 <h1>fuck</h1>
+                
             </div>
         </div>
     )

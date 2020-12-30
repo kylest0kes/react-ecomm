@@ -6,7 +6,7 @@ import './style.css'
 export default function SignInForm() {
     return (
         <div>
-            <Link to="/viewall"><p className="form-logo"><i class="fas fa-store"></i></p></Link>
+            <Link to="/"><p className="form-logo"><i class="fas fa-infinity"></i></p></Link>
             <form>
                 <div className="form-icons">
                     <h4>Sign-In</h4>

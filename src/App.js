@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
 import SignIn from './pages/SignIn';
 import Register from './pages/Register';
 import ViewAll from './pages/ViewAll';
@@ -13,9 +12,6 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/viewall">
             <ViewAll />
           </Route>
           <Route path="/register">

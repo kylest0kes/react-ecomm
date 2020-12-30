@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.header {
+  background-color: grey;
+}
+
 .menu-btn-text {
   color: white;
 }
@@ -25,4 +29,13 @@
   border: black 1px solid;
 }
 
+.header-logo {
+  padding: 5px;
+}
+
+.header-text {
+  margin-left: 15px;
+  color: rgb(122, 10, 10);
+  bottom: 0;
+}
 
