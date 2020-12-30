@@ -4,6 +4,8 @@ import SignIn from './pages/SignIn';
 import Register from './pages/Register';
 import ViewAll from './pages/ViewAll';
 
+import './style.css'
+
 
 
 function App() {
