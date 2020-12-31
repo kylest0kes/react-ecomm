@@ -5,6 +5,7 @@ import Register from './pages/Register';
 import ViewAll from './pages/ViewAll';
 
 import './style.css'
+import AddSB from './pages/AddSB';
 
 
 
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/signin">
             <SignIn />
+          </Route>
+          <Route path="/addsb">
+            <AddSB />
           </Route>
         </Switch>
       </div>
