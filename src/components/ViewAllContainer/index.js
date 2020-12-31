@@ -1,4 +1,5 @@
 import React from 'react';
+import ItemCategoryTab from '../ItemCategoryTab';
 import ShoppingItem from '../ShoppingItem';
 import StoreItem from '../StoreItem';
 
@@ -9,10 +10,10 @@ export default function ViewAllContainer() {
     return (
         <div className="grid-x all-container">
             <div className="cell small-2 medium-3 large-2 grid-left">
-                <h1>fuck</h1>
-                <h1 style={{backgroundColor: "rgb(201, 201, 201)"}}>fuck</h1>
-                <h1>fuck</h1>
-                <h1>fuck</h1>
+                <ItemCategoryTab />
+                <ItemCategoryTab />
+                <ItemCategoryTab />
+                <ItemCategoryTab />
             </div>
             <div className="cell small-6 medium-5 large-7 grid-mid">
                 <StoreItem />
