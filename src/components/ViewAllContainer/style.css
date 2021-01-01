@@ -4,12 +4,20 @@
 
 .grid-mid {
     background-color: rgb(201, 201, 201);
-
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .shopping-cart {
     background-color: rgb(182, 180, 180);
-   height: 75vh;
+    height: 75vh;
 }
 
 .shopping-item-container {

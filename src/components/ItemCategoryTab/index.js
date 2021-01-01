@@ -21,7 +21,7 @@ class ItemCategoryTab extends Component {
     
     render(){
         return(
-            <h1 style={{backgroundColor: this.state.selectedBG}} onClick={this.selectTab}>fff</h1>
+            <div className="tabs" style={{backgroundColor: this.state.selectedBG}} onClick={this.selectTab}>Category Tab</div>
         )
     }
 }

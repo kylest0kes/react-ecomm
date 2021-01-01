@@ -22,13 +22,7 @@ export default function ViewAllContainer() {
                 <StoreItem />
                 <StoreItem />
                 <StoreItem />
-                <StoreItem />
-                <StoreItem />
-                <StoreItem />
-                <StoreItem />
-                <StoreItem />
-                <StoreItem />
-                <StoreItem />
+                <StoreItem />   
             </div>
             <div className="cell small-4 medium-4 large-3 shopping-cart">
                 <h4 style={{backgroundColor: "rgb(88, 126, 182)", textAlign: "center", color: "white"}}>Shopping Cart</h4>
