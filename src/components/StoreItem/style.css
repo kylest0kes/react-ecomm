@@ -2,8 +2,10 @@
     background-color: #fefefe;
     border: 1px solid #e6e6e6;
     padding: 1rem;
-    margin: 10px 7.5px 1.5rem 7.5px;
-
+    margin: 10px 10px 1.5rem 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }    
 
 .product-card-thumbnail {
@@ -25,6 +27,10 @@
     display: block;
     font-family: 'Open sans', sans-serif;
     font-size: 0.85rem;
+    width: 175px;
+    height: 130px;
+    overflow: auto;
+   
 }
 
 .product-card-price {
@@ -46,6 +52,7 @@
 .product-card-colors {
     display: block;
     margin-top: 0.8rem;
+    width: 175px;
 }
 
 .product-card-color-option {
@@ -58,4 +65,4 @@
 .pc-con {
    
    
-}
+} 
