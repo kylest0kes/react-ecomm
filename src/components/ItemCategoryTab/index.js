@@ -4,24 +4,27 @@ import './style.css';
 
 class ItemCategoryTab extends Component {
    state = {
-            selectedBG: ""
+            selectedBG: "",
+            selectedBorder: ""
         }
     
 
     selectTab = (e) => {
         this.setState({
-            selectedBG: "rgb(201, 201, 201)"
+            selectedBG: "rgb(201, 201, 201)",
+            selectedBorder: "rgb(201, 201, 201)"
         })
         if(this.state.selectedBG === "rgb(201, 201, 201)") {
             this.setState({
-                selectedBG: ""
+                selectedBG: "",
+                selectedBorder: ""
             })  
         }
     }
     
     render(){
         return(
-            <div className="tabs" style={{backgroundColor: this.state.selectedBG}} onClick={this.selectTab}>Category Tab</div>
+            <div className="tabs" style={{backgroundColor: this.state.selectedBG, borderColor: this.state.selectedBorder}} onClick={this.selectTab}>Category Tab</div>
         )
     }
 }

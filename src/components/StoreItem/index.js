@@ -16,6 +16,7 @@ export default function StoreItem() {
                 <div className="product-card-colors">
                     <ItemCounter />
                 </div>
+                <button class="button-hover-addcart button"><span>Add to cart</span><i class="fa fa-shopping-cart"></i></button>
             </div>
     )
 }
