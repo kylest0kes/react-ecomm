@@ -1,4 +1,5 @@
 import React from 'react';
+import CartTotal from '../CartTotal';
 import ItemCategoryTab from '../ItemCategoryTab';
 import ShoppingItem from '../ShoppingItem';
 import StoreItem from '../StoreItem';
@@ -37,7 +38,7 @@ export default function ViewAllContainer() {
                     <ShoppingItem />
                     <ShoppingItem />
                 </div>
-                
+                <CartTotal />
             </div>
         </div>
     )
