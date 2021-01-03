@@ -7,14 +7,10 @@ export default function CartTotal() {
         <div>
             <div class="checkout-summary-details">
                 <div class="left">
-                    <p><strong>Subtotal:</strong></p>
-                    <p><strong>Tax:</strong></p>
-                    <p><strong>Total:</strong></p>
+                    <p className="total-title"><strong>Total SB:</strong></p>
                 </div>
                 <div class="right">
-                    <p>$10.99</p>
-                    <p>$2.00</p>
-                    <p>$12.99</p>
+                    <p>12 SB</p>
                 </div>
             </div>
             <button class="button expanded proceed">Proceed to Checkout</button>

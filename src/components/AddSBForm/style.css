@@ -5,7 +5,22 @@
     margin: 15px auto;
 }
 
+.addsb-title p, .addsb-subtitle p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
 .addsb-title {
-    background-color: pink;
+    font-size: 30px;
+}
+
+.addsb-subtitle {
+    font-size: 20px;
+}
+
+.new-question {
+    font-size: small;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 

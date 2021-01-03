@@ -8,10 +8,10 @@ export default function ShoppingItem() {
             <img src="https://placeimg.com/100/80/any"/>
             <div class="item-name">
                 <p className="cart-item-title">Product Name</p>
-                <p><span class="title">Quantity: </span>3</p>
+                <p className="quantity"><span class="title">Quantity: </span>3</p>
             </div>
             <div class="item-price">
-                <p class="title">10 SCHRUTEBUCKS</p>
+                <p class="title">10 SB</p>
                 <a href="#">Remove</a>
             </div>
         </div>
