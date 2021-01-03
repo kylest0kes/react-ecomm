@@ -1,0 +1,11 @@
+.addsb-container {
+    border: black 2px solid;
+    width: 35%;
+    display: block;
+    margin: 15px auto;
+}
+
+.addsb-title {
+    background-color: pink;
+}
+

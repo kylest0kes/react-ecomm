@@ -16,6 +16,10 @@
   color: white;
 }
 
+.menu-btn-text:hover {
+  cursor: pointer;
+}
+
 .menu-btn {
   margin-top: 10px;
   margin-right: 10px;

@@ -3,3 +3,7 @@
     text-align: center;
     font-size: 24px;
 }
+
+.tabs:hover {
+    background-image: linear-gradient(rgb(201, 201, 201), rgb(255, 255, 255));
+}

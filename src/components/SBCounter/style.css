@@ -1,57 +1,63 @@
-.button-rounded-hover {
+.addsb-btn {
     display: block;
-    margin: 5px auto;
-    border: 0;
-    border-radius: 5000px;
-    background-color: rgb(182, 180, 180);
-    color: rgb(51, 91, 151);
-    font-weight: bolder;
-    text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-    font-size: .75rem;
-    letter-spacing: 2px;
-    transition: all 0.35s ease;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    margin: 0 auto 15px auto;
 }
 
-.button-rounded-hover:before {
-  opacity: 0;
-  content: "";
+.button-hover-addsb {
+  border: 2px solid #767676;
+  background: transparent;
+  color: #767676;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.07rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  width: 60%;
+}
+
+.button-hover-addsb span {
+  transition: all 0.2s ease-in-out;
+}
+
+.button-hover-addsb .fas {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  border-radius: inherit;
-  background-color: #fefefe;
-  transition: all 0.3s;
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
+  font-size: 1.2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #1779ba;
+  right: -25px;
+  transition: 0.4s right cubic-bezier(0.38, 0.6, 0.48, 1);
 }
 
-.button-rounded-hover:after {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  border: 2px solid rgb(182, 180, 180);
-  content: '';
-  border-radius: inherit;
+.button-hover-addsb .fab {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #1779ba;
+    right: -25px;
+    transition: 0.4s right cubic-bezier(0.38, 0.6, 0.48, 1);
+  }
+
+.button-hover-addsb:hover {
+  border-color: #1779ba;
+  background: transparent;
+  transition: border-color 0.2s;
 }
 
-.button-rounded-hover:hover,
-.button-rounded-hover:focus {
-  background-color: rgb(51, 91, 151);
+.button-hover-addsb:hover span {
+  margin-right: 20px;
+  color: #1779ba;
 }
 
-.button-rounded-hover:hover:before,
-.button-rounded-hover:focus:before {
-  -webkit-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-          transform: translateX(0%);
-  opacity: 0.25;
+.button-hover-addsb:hover .fas {
+  right: 40px;
 }
+
+.button-hover-addsb:hover .fab {
+    right: 20px;
+  }

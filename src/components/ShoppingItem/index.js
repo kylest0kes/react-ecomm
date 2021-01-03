@@ -11,7 +11,7 @@ export default function ShoppingItem() {
                 <p><span class="title">Quantity: </span>3</p>
             </div>
             <div class="item-price">
-                <p class="title">$24.99</p>
+                <p class="title">10 SCHRUTEBUCKS</p>
                 <a href="#">Remove</a>
             </div>
         </div>

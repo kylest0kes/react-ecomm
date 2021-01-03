@@ -38,7 +38,6 @@ class ItemCounter extends Component {
                     </div>
                 </div>
                 <button class="button-hover-addcart button addtocart-btn"><span>Add to cart</span><i class="fa fa-shopping-cart"></i></button>
-
             </div>
                 
         )

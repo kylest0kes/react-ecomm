@@ -1,17 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
 
 import './style.css'
 
-export default function SBCounter() {
-    return (
-        <div className="grid-x">
-            <div className="cell small-8 medium-8 large-9">
+class SBCounter extends Component {
+    state = {
+        sbTotal: 0
+    }
 
+
+
+    render() {
+        return(
+            <div>
+                
+                <button class="button-hover-addsb button addsb-btn"><span>Add Schrutebucks</span><i class="fas fa-dollar-sign"></i> <i class="fab fa-btc"></i></button>
             </div>
-            <div className="cell small-4 medium-4 large-3">
-            <Link to="/addsb" className="button button-rounded-hover">You have 0 Shrutebucks</Link>
-            </div>
-        </div>
-    )
+        )
+    }
 }
+
+export default SBCounter
