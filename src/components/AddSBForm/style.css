@@ -24,3 +24,10 @@
     margin-bottom: 5px;
 }
 
+.sbs-to-add input {
+    display: block;
+    margin: 15px auto;
+    width: 70%;
+    height: 50px;
+    font-size: 25px;
+}

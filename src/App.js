@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SignIn from './pages/SignIn';
 import Register from './pages/Register';
 import ViewAll from './pages/ViewAll';
-
-import './style.css'
 import AddSB from './pages/AddSB';
 
-
+import './style.css'
 
 function App() {
   return (

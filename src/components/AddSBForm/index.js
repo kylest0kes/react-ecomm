@@ -14,6 +14,9 @@ export default function AddSBForm() {
             <div className="cell addsb-subtitle">
                 <p>How many Schrutebucks would you like to add?</p>
             </div>
+            <div className="cell sbs-to-add">
+                <input placeholder="Enter a valid amount"></input>
+            </div>
             <div className="cell small-12 medium-12 large-12 addsb-counter">
                 <SBCounter />
             </div>
