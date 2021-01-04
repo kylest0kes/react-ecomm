@@ -13,8 +13,8 @@ export default function CartTotal() {
                     <p>12 SB</p>
                 </div>
             </div>
-            <button class="button expanded proceed">Proceed to Checkout</button>
-            <button class="button expanded clear-cart">Empty Your Cart</button>
+            <button class="button expanded proceed cart-btn">Proceed to Checkout</button>
+            <button class="button expanded clear-cart cart-btn">Empty Your Cart</button>
         </div>
     )
 }

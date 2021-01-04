@@ -6,7 +6,7 @@ import './style.css'
 
 export default function AddSBForm() {
     return (
-        // DISABLED IF NOT REGISTERED
+        // DISABLED IF NOT REGISTERED, HELLO GUEST
         <div className="grid-x addsb-container">
             <div className="cell addsb-title">
                 <p>Hello Username!</p>

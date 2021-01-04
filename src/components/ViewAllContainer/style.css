@@ -17,10 +17,11 @@
 
 .shopping-cart {
     background-color: rgb(182, 180, 180);
-    height: 65vh;
+    height: 666px;
+    position: relative;
 }
 
 .shopping-item-container {
     overflow: auto;
-    height: 44vh;
+    height: 450px;
 }
