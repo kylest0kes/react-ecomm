@@ -21,10 +21,19 @@ export default function Header(props) {
                         <h4 className="welcome">Welcome {currentUser}!</h4>
                     </div>
                     <div className="cell small-4 medium-4 large-2">
-                        <ul className="menu links">
-                            <li><Link to="/register" className="button menu-btn"><button type="button" className="menu-btn-text">Register</button></Link></li>
-                            <li><Link to="/signin" className="button menu-btn"><button type="button" className="menu-btn-text">Sign-In</button></Link></li>
-                        </ul>
+                        {currentUser && (
+                            <ul className="menu links">
+                                <li><Link to="/logout" className="button menu-btn logout-btn"><button type="button" className="menu-btn-text">Logout</button></Link></li>
+                            </ul>
+                        )}
+
+                        {!currentUser && (
+                            <ul className="menu links">
+                                <li><Link to="/register" className="button menu-btn"><button type="button" className="menu-btn-text">Register</button></Link></li>
+                                <li><Link to="/signin" className="button menu-btn"><button type="button" className="menu-btn-text">Sign-In</button></Link></li>
+                            </ul>
+                        )}
+                       
                     </div>
                 </div>
             </div>
@@ -33,5 +42,5 @@ export default function Header(props) {
 }
 
 Header.defaultProps = {
-    currentUser: 'test'
+    currentUser: null
 }

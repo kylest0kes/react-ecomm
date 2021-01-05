@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, useRouteMatch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { auth } from './firebase/utils';
 
 // PAGES
@@ -30,7 +30,7 @@ class App extends Component {
       if (!userAuth) return;
 
       this.setState({
-        currentUser: userAuth
+        currentUser: userAuth.displayName
       });
     });
   }
@@ -56,7 +56,7 @@ class App extends Component {
               <SignIn />
             </Route>
             <Route path="/addsb">
-              <AddSB />
+              <AddSB currentUser={currentUser} />
             </Route>
           </Switch>
         </div>

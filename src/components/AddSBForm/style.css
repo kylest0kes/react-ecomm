@@ -31,3 +31,19 @@
     height: 50px;
     font-size: 25px;
 }
+
+.nouser-addsb-signuplink {
+    display: block;
+    margin: 10px auto;
+    border: 1px black solid;
+    padding: 10px;
+    background-color: rgb(51, 91, 151);
+}
+
+.nouser-addsb-signuplink:hover {
+    background-color: rgb(77, 185, 77);
+}
+
+.signuplink-text, .signuplink-text:hover {
+    color: white;
+}

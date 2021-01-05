@@ -20,15 +20,18 @@
   cursor: pointer;
 }
 
-.menu-btn {
+.menu-btn, .logout-btn {
   margin-top: 10px;
   margin-right: 10px;
   background-color: rgb(51, 91, 151);
-  border-radius: 16px;
 }
 
 .menu-btn:hover {
   background-color: rgb(77, 185, 77);
+}
+
+.logout-btn:hover {
+  background-color: rgb(189, 45, 45);
 }
 
 .menu-links {
