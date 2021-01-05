@@ -27,7 +27,11 @@ class App extends Component {
 
   componentDidMount() {
     this.authListener = auth.onAuthStateChanged(userAuth => {
-      if (!userAuth) return;
+      if (!userAuth) {
+        this.setState({
+          ...initialState
+        })
+      };
 
       this.setState({
         currentUser: userAuth.displayName

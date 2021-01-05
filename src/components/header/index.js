@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { auth } from '../../firebase/utils';
+
 import logo from '../../images/logo.jpg';
-
-
 import './style.css';
 
 export default function Header(props) {
@@ -23,7 +23,7 @@ export default function Header(props) {
                     <div className="cell small-4 medium-4 large-2">
                         {currentUser && (
                             <ul className="menu links">
-                                <li><Link to="/logout" className="button menu-btn logout-btn"><button type="button" className="menu-btn-text">Logout</button></Link></li>
+                                <li><span className="button menu-btn logout-btn menu-btn-text" onClick={() => auth.signOut()}>Logout</span></li>
                             </ul>
                         )}
 
