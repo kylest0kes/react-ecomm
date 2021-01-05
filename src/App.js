@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { auth } from './firebase/utils';
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import { auth, handleUserProfile } from './firebase/utils';
 
 // PAGES
 import SignIn from './pages/SignIn';
@@ -26,16 +26,23 @@ class App extends Component {
   authListener = null; 
 
   componentDidMount() {
-    this.authListener = auth.onAuthStateChanged(userAuth => {
-      if (!userAuth) {
-        this.setState({
-          ...initialState
+    this.authListener = auth.onAuthStateChanged(async userAuth => {
+      if(userAuth) {
+        console.log(userAuth)
+        const userRef = await handleUserProfile(userAuth);
+        userRef.onSnapshot(snapshot => {
+          this.setState({
+            currentUser: {
+              id: snapshot.id,
+              ...snapshot.data()
+            }
+          })
         })
-      };
-
+      }
+      
       this.setState({
-        currentUser: userAuth.displayName
-      });
+        ...initialState
+      })
     });
   }
 
@@ -44,24 +51,24 @@ class App extends Component {
   }
 
   render() {
-    const { currentUser } = this.state
+    const { currentUser, displayName } = this.state
 
     return (
       <Router>
         <div className="App">
           <Switch>
-            <Route exact path="/">
-              <ViewAll currentUser={currentUser} />
-            </Route>
-            <Route path="/register">
+            <Route exact path="/" render={() => (
+              <ViewAll currentUser={currentUser} displayName={displayName} />
+            )}/>
+            <Route path="/register" render={() => currentUser ? <Redirect to='/' /> : (
               <Register />
-            </Route>
-            <Route path="/signin">
+            )} />
+            <Route path="/signin" render={() => currentUser ? <Redirect to='/' /> : (
               <SignIn />
-            </Route>
-            <Route path="/addsb">
-              <AddSB currentUser={currentUser} />
-            </Route>
+            )}/>
+            <Route path="/addsb" render={() => (
+              <AddSB currentUser={currentUser} displayName={displayName} />
+            )}/>
           </Switch>
         </div>
       </Router>

@@ -5,16 +5,14 @@ import SBCounter from '../SBCounter';
 import './style.css'
 
 export default function AddSBForm(props) {
-    const { currentUser } = props;
+    const { currentUser, displayName } = props;
 
     return (
-        // DISABLED IF NOT REGISTERED, HELLO GUEST
-        
         <div className="grid-x addsb-container">
             {currentUser && (
                 <div className="user-addsb">
                     <div className="cell addsb-title">
-                        <p>Hello {currentUser}!</p>
+                        <p>Hello {displayName}!</p>
                     </div>
                     <div className="cell addsb-subtitle">
                         <p>How many Schrutebucks would you like to add?</p>
@@ -48,5 +46,5 @@ export default function AddSBForm(props) {
 }
 
 AddSBForm.defaultProps = {
-    currentUser: null
+    displayName: null
 }
