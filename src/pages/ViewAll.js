@@ -3,10 +3,10 @@ import Header from '../components/Header';
 import SBTally from '../components/SBTally';
 import ViewAllContainer from '../components/ViewAllContainer';
 
-export default function ViewAll() {
+export default function ViewAll(props) {
     return (
         <div>
-            <Header />
+            <Header {...props}/>
             <SBTally />
             <ViewAllContainer />
         </div>
