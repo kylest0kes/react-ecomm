@@ -16,7 +16,7 @@ export default function SBTally(props) {
                     <Link to="/addsb" className="button button-rounded-hover">You have {currentUser.schruteBucks} Shrutebucks</Link>
                 )}
                 {!currentUser && (
-                    <Link to="/register" className="button button-rounded-hover link-signup">SignUp to spend Schrutebucks</Link>
+                    <div></div>
                 )}
             </div>
         </div>

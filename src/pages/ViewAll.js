@@ -8,7 +8,7 @@ export default function ViewAll(props) {
         <div>
             <Header {...props}/>
             <SBTally {...props}/>
-            <ViewAllContainer />
+            <ViewAllContainer {...props} />
         </div>
     )
 }
