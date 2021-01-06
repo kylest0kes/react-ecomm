@@ -29,6 +29,7 @@ export const handleUserProfile = async (userAuth) => {
             await userRef.set({
                 displayName,
                 email,
+                schruteBucks: 0,
                 createdAt: timestamp
             });
         } catch(err) {

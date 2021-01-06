@@ -28,7 +28,7 @@ class App extends Component {
   componentDidMount() {
     this.authListener = auth.onAuthStateChanged(async userAuth => {
       if(userAuth) {
-        console.log(userAuth)
+        // console.log(userAuth)
         const userRef = await handleUserProfile(userAuth);
         userRef.onSnapshot(snapshot => {
           this.setState({
@@ -51,14 +51,16 @@ class App extends Component {
   }
 
   render() {
-    const { currentUser, displayName } = this.state
+    const { currentUser } = this.state;
+    // const { displayName } = currentUser;
+    console.log(currentUser)
 
     return (
       <Router>
         <div className="App">
           <Switch>
             <Route exact path="/" render={() => (
-              <ViewAll currentUser={currentUser} displayName={displayName} />
+              <ViewAll currentUser={currentUser} />
             )}/>
             <Route path="/register" render={() => currentUser ? <Redirect to='/' /> : (
               <Register />
@@ -67,7 +69,7 @@ class App extends Component {
               <SignIn />
             )}/>
             <Route path="/addsb" render={() => (
-              <AddSB currentUser={currentUser} displayName={displayName} />
+              <AddSB currentUser={currentUser} />
             )}/>
           </Switch>
         </div>

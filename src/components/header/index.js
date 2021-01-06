@@ -6,7 +6,8 @@ import logo from '../../images/logo.jpg';
 import './style.css';
 
 export default function Header(props) {
-    const { currentUser, displayName } = props;
+    const { currentUser } = props;
+
     return (
         <div className="header" data-sticky-container>
             <div className="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
@@ -16,10 +17,19 @@ export default function Header(props) {
                             <li className="header-logo"><img src={logo} alt="logo"/></li>
                         </ul>
                     </div>
-                    {/* BLANK IF NOT LOGGED IN */}
-                    <div className="cell small-4 medium-4 large-8 welcome">
-                        <h4 className="welcome">Welcome {displayName}!</h4>
-                    </div>
+                    
+                    {currentUser && (
+                        <div className="cell small-4 medium-4 large-8 welcome">
+                            <h4 className="welcome">Welcome {currentUser.displayName}!</h4>
+                        </div>
+                    )}
+
+                    {!currentUser && (
+                        <div className="cell small-4 medium-4 large-8 welcome">
+                            <h4 className="welcome">Welcome!</h4>
+                        </div>
+                    )}
+                    
                     <div className="cell small-4 medium-4 large-2">
                         {currentUser && (
                             <ul className="menu links">
